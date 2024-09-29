@@ -6,7 +6,7 @@ module.exports = {
     async execute(api, event, args, commands) {
         const { threadID, messageID } = event;
 
-        let helpMessage = `📜 | ${global.convertToGothic('Command List')}\n\n`;
+        let helpMessage = `📜 | ${global.convertToGothic('Rexbot Command List')}\n\n`;
 
         let commandList = Array.from(commands.keys()).map((name, index) => {
             return `${index + 1}. ${global.convertToGothic(name)}`;
