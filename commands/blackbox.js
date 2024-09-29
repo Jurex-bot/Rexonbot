@@ -9,7 +9,7 @@ module.exports = {
         const { threadID, messageID, senderID } = event;
 
         if (!args.length) {
-            return api.sendMessage("Please provide a query for the Blackbox AI.", threadID, messageID);
+            return api.sendMessage("Please provide a query for Rexbot Blackbox AI.", threadID, messageID);
         }
 
         const query = args.join(" ");
@@ -17,7 +17,7 @@ module.exports = {
             const response = await chatbox(senderID, query); 
             await api.sendMessage(response, threadID, messageID);
         } catch (error) {
-            await api.sendMessage("Error interacting with Blackbox AI. Please try again later.", threadID, messageID);
+            await api.sendMessage("⚠️Error interacting with Rexbot Blackbox AI. ⏱Please try again later.", threadID, messageID);
         }
     }
 };
