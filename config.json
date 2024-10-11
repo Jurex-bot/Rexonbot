@@ -1,7 +1,7 @@
 {
     "prefix": "/",
     "owner": "Jurex Aso",
-    "botname": "Kimbot",
+    "botname": "★🅡🅔🅧🅑🅞🅣",
     "apiOptions": {
         "forceLogin": false,
         "logLevel": "silent",
@@ -15,7 +15,7 @@
         "listenEvents": true
     },
     "adminBot": [
-        "61562981978181"
+        "100043141746181"
     ],
     "autoLoad": true,
     "autopost": true,
